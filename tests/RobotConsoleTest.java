@@ -1,14 +1,15 @@
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+
 import org.junit.jupiter.api.*;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 
 
-import static org.junit.jupiter.api.Assertions.*;
 
-class RobotConsoleTest {
+public class RobotConsoleTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();

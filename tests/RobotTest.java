@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static java.time.Duration.ofMillis;
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,6 +17,15 @@ class RobotTest {
 
     @org.junit.jupiter.api.Test
     void setName() {
+    }
+
+    @org.junit.jupiter.api.Test
+    void getAge() {
+        assertEquals(10, buddy.getAge());
+    }
+
+    @org.junit.jupiter.api.Test
+    void setAge() {
     }
 
     @Test
@@ -68,8 +79,11 @@ class RobotTest {
         });
     }
 
-
-    @Test
+    //need to finish
+    /*@ParameterizedTest
+    @CsvSource({"3,10000.00", "9,7500.00", "11,5000.00"})
     void checkCost() {
-    }
+        Robot buddy = new Robot("buddy", age);
+        assertEquals(expected, buddy.checkage() );
+    }*/
 }
