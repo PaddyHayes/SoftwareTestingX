@@ -75,5 +75,14 @@ public class DriverClass {
         }
         System.out.println( "Driver number valid");
     }
+    public void testsetDriverNum(){
+    setDriverNum(4);
+    }
 
-}
+
+
+
+    }
+
+
+

@@ -87,4 +87,24 @@ public class Robot {
         System.out.println("Age ok");
     }
 
+    //Returns the total cost
+
+    public double getTotalCost(RobotFees rFees) {
+
+        double cost;
+
+        double fees;
+
+
+        fees = rFees.getCost(age);
+
+        System.out.println("for " + age + "the cost is " + checkCost());
+
+        cost = (checkCost()) + fees;
+
+        return cost;
+
+    }
+
+
 }
